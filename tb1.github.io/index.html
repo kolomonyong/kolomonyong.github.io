@@ -271,7 +271,7 @@ function mtr(a,b,c,d){
   return "<td>"+a+"</td><td>"+b+"</td><td>"+c+"</td><td>"+d+"</td>";
 }
 function kl(b1,b2,k1,k2){
-  return "<td>"+k2+b1+" - "+k1+b2+"</td>";
+  return "<td>"+b2+k1+" - "+b1+k2+"</td>";
 }
 function pr(target,nilai){
   document.getElementById(target).innerHTML=nilai;
@@ -292,7 +292,7 @@ c3=inp("c3");
 d1=inp("d1");
 d2=inp("d2");
 d3=inp("d3");
-  pr("jwb1",'<table class="table"><tr>'+mtr(a1,b1,c1,d1)+"</tr><tr>"+mtr(a2,b2,c2,d2)+kl("B1","B2",a1,a2)+"</tr><tr>"+mtr(a3,b3,c3,d3)+kl("B2","B3",a1,a3));
+  pr("jwb1",'<table class="table"><tr>'+mtr(a1,b1,c1,d1)+"</tr><tr>"+mtr(a2,b2,c2,d2)+kl(a1,a2,"B1","B2")+"</tr><tr>"+mtr(a3,b3,c3,d3)+kl(a1,a3,"B1","B3"));
   k1=a1;
   k2=a2;
   a2=sel(a1,a2,k1,k2);
@@ -304,7 +304,7 @@ d3=inp("d3");
   b3=sel(b1,b3,k1,k2);
   c3=sel(c1,c3,k1,k2);
   d3=sel(d1,d3,k1,k2);
-  pr("jwb2",'<table class="table"><tr>'+mtr(a1,b1,c1,d1)+"</tr><tr>"+mtr(a2,b2,c2,d2)+"</tr><tr>"+mtr(a3,b3,c3,d3)+kl("B2","B3",b2,b3));
+  pr("jwb2",'<table class="table"><tr>'+mtr(a1,b1,c1,d1)+"</tr><tr>"+mtr(a2,b2,c2,d2)+"</tr><tr>"+mtr(a3,b3,c3,d3)+kl(b2,b3,"B2","B3"));
   k1=b2;
   k2=b3;
   b3=sel(b2,b3,k1,k2);
@@ -314,7 +314,7 @@ d3=inp("d3");
   z=d3/c3;
   y=(d2-c2*z)/b2;
   x=(d1-c1*z-b1*y)/a1;
-  pr("jwb4","Z = "+d3+"/"+c3+"="+z+"<br>Y = ("+d1+"-"+c1+"("+z+")/"+a1+"="+y+"<br>X = "+x);
+  pr("jwb4","Z = "+d3+"/"+c3+"="+z+"<br>Y = ("+d1+"-"+c1+"("+z+"))/"+a1+"="+y+"<br>X = ("+d3+"-"+b3+"("+y+") - "+c3+"("+z+")/"+a4+"="+x;
 }
 
     </script>

@@ -271,7 +271,7 @@ function mtr(a,b,c,d){
   return "<td>"+a+"</td><td>"+b+"</td><td>"+c+"</td><td>"+d+"</td>";
 }
 function kl(b1,b2,k1,k2){
-  return "<td>"+b1+k1+" - "+b2+k2+"</td>";
+  return "<td>"+b1+k2+" - "+b2+k1+"</td>";
 }
 function pr(target,nilai){
   document.getElementById(target).innerHTML=nilai;
@@ -314,7 +314,7 @@ d3=inp("d3");
   z=d3/c3;
   y=(d2-c2*z)/b2;
   x=(d1-c1*z-b1*y)/a1;
-  pr("jwb4","Z = "+d3+"/"+c3+"="+z+"<br>Y = ("+d1+"-"+c1+"("+z+"))/"+a1+"="+y+"<br>X = ("+d3+"-"+b3+"("+y+") - "+c3+"("+z+")/"+a4+"="+x);
+  pr("jwb4","Z = "+d3+"/"+c3+"="+z+"<br>Y = ("+d1+"-"+c1+"("+z+"))/"+a1+"="+y+"<br>X = ("+d3+"-"+b3+"("+y+") - "+c3+"("+z+"))/"+a4+"="+x);
 }
 
     </script>

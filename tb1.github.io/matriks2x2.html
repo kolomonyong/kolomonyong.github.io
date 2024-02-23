@@ -59,6 +59,7 @@
                         </div>
                     </div>
                     <button class="button mb-3" onclick="op()">Hitung</button>
+                    <button class="button mb-3" onclick="fillRandomValues()">Isi Nilai Acak</button>
                     <button class="button mb-3">
                       <a href="index.html" style="text-decoration: none; color: black">Kembali</a>
                     </button>
@@ -103,6 +104,15 @@
 
         pr("jwb4", "X = " + x.toFixed(2) + "<br>Y = " + y.toFixed(2));
     }
+
+    function fillRandomValues() {
+            document.getElementById('a11').value = Math.floor(Math.random() * 10);
+            document.getElementById('a12').value = Math.floor(Math.random() * 10);
+            document.getElementById('b1').value = Math.floor(Math.random() * 10);
+            document.getElementById('a21').value = Math.floor(Math.random() * 10);
+            document.getElementById('a22').value = Math.floor(Math.random() * 10);
+            document.getElementById('b2').value = Math.floor(Math.random() * 10);
+        }
 </script>
 
 </html>

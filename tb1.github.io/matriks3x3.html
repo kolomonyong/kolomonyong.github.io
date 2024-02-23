@@ -96,6 +96,7 @@
           </div>
         </div>
         <button class="button mb-3" onclick="op()">Hitung</button>
+        <button class="button mb-3" onclick="fillRandomValues()">Isi Nilai Acak</button>
         <button class="button mb-3">
           <a href="index.html" style="text-decoration: none; color: black">Kembali</a>
         </button>
@@ -163,6 +164,21 @@
         x = (d1 - c1 * z - b1 * y) / a1;
         pr("jwb4", "Z = " + d3 + "/" + c3 + "=" + z + "<br>Y = (" + d1 + "-" + c1 + "(" + z + ")/" + a1 + "=" + y + "<br>X = " + x);
     }
+
+    function fillRandomValues() {
+        document.getElementById('a1').value = Math.floor(Math.random() * 10);
+        document.getElementById('a2').value = Math.floor(Math.random() * 10);
+        document.getElementById('a3').value = Math.floor(Math.random() * 10);
+        document.getElementById('b1').value = Math.floor(Math.random() * 10);
+        document.getElementById('b2').value = Math.floor(Math.random() * 10);
+        document.getElementById('b3').value = Math.floor(Math.random() * 10);
+        document.getElementById('c1').value = Math.floor(Math.random() * 10);
+        document.getElementById('c2').value = Math.floor(Math.random() * 10);
+        document.getElementById('c3').value = Math.floor(Math.random() * 10);
+        document.getElementById('d1').value = Math.floor(Math.random() * 10);
+        document.getElementById('d2').value = Math.floor(Math.random() * 10);
+        document.getElementById('d3').value = Math.floor(Math.random() * 10);
+      }
 
 </script>
 </html>
